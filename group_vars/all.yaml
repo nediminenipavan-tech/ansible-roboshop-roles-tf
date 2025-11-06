@@ -1,0 +1,9 @@
+MONGODB_HOST: mongodb.daws86pavan.cyou 
+REDIS_HOST: redis.daws86pavan.cyou 
+CATALOGUE_HOST: catalogue.daws86pavan.cyou 
+CART_HOST: cart.daws86pavan.cyou 
+USER_HOST: user.daws86pavan.cyou 
+RABBITMQ_HOST: rabbitmq.daws86pavan.cyou 
+MYSQL_HOST: mysql.daws86pavan.cyou 
+SHIPPING_HOST: shipping.daws86pavan.cyou 
+PAYMENT_HOST: payment.daws86pavan.cyou 
