@@ -13,4 +13,4 @@
   community.general.npm:
     path: /app
   tags:
-  - deployment
+  - deployment 
