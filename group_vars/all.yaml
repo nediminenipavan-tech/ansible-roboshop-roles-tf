@@ -7,3 +7,6 @@ RABBITMQ_HOST: rabbitmq-{{ env }}.daws86pavan.cyou
 MYSQL_HOST: mysql-{{ env }}.daws86pavan.cyou 
 SHIPPING_HOST: shipping-{{ env }}.daws86pavan.cyou 
 PAYMENT_HOST: payment-{{ env }}.daws86pavan.cyou 
+
+
+
