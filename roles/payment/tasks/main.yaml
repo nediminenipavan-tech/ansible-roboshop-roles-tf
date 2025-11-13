@@ -1,7 +1,19 @@
 - name: app setup
   ansible.builtin.import_role:
     name: common
-    tasks_from: app-setup.yaml
+    tasks_from: app-setup.yaml 
+
+# changed this as part of latest python3-devel from repos have upgraged openssl-libs but other openssl packages are old in AMI, so mismatch occures. we are upgrading before installing python or after 
+- name: upgrage openssl packages
+  ansible.buitin.dnf:
+    name:
+  state: latest
+  loop:
+  - openssl
+  - openssl-libs
+  - openssh
+  - openssh-server
+  - openssh-clients 
 
 - name: app setup
   ansible.builtin.import_role:
@@ -11,4 +23,4 @@
 - name: system setup
   ansible.builtin.import_role:
     name: common
-    tasks_from: system-setup.yaml
+    tasks_from: system-setup.yaml  
